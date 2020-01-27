@@ -1,6 +1,12 @@
 /* Small devices (tablets, 768px and up) */
-@media screen and (min-width:768px) { }
-
+@media screen and (min-width:768px) {
+    .nav-links {
+        min-width: 25%;
+        max-width: 100%;
+        list-style: none;
+        margin: 0 1.5em;
+    }
+}
 /* Medium devices (desktops, 992px and up) */
 @media screen and (min-width:992px) { /* ... */ }
 
@@ -8,8 +14,32 @@
 @media screen and (min-width:1200px) { /* ... */ }
 
 #logo {
-    min-height: 10em;
-    /*max-height: 40em;*/
-    min-width: 100%;
+    min-height: 25%;
+    max-height: 100%;
+    min-width: 25%;
     max-width: 100%;
+}
+
+#social-media-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+
+#apple,
+#facebook,
+#twitter,
+#github,
+#slack {
+    margin: 0 1.5em;
+}
+
+#apple:hover,
+#facebook:hover,
+#twitter:hover,
+#github:hover,
+#slack:hover {
+    transition: ease-in;
+    transform: scale(2.5);
 }
