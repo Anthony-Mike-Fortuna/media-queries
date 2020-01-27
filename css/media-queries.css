@@ -1,17 +1,52 @@
-/* Small devices (tablets, 768px and up) */
-@media screen and (min-width:768px) {
-    .nav-links {
-        min-width: 25%;
-        max-width: 100%;
-        list-style: none;
-        margin: 0 1.5em;
-    }
-}
-/* Medium devices (desktops, 992px and up) */
-@media screen and (min-width:992px) { /* ... */ }
 
-/* Large devices (large desktops, 1200px and up) */
-@media screen and (min-width:1200px) { /* ... */ }
+body * {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    display:flex;
+    justify-content: center;
+}
+
+.main {
+    margin: 50px auto;
+    width: 500px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.sub-section {
+    margin: 50px auto;
+    width: 500px;
+    padding: 10px;
+    border: 1px solid black;
+    float: right;
+}
+
+.alert-info {
+    background-color: aqua;
+    border: .25em solid lightgrey;
+    justify-content: center;
+}
+
+nav {
+    justify-content: center;
+}
+
+.nav-links {
+    list-style: none;
+    flex-direction: column;
+}
+
+.nav-links a {
+    background-color: lightgrey;
+    border: .25em solid lightgrey;
+    padding: 1em 100vw;
+    margin-top: .375em;
+    margin-bottom: .375em;
+    margin-right: .25em;
+    justify-content: center;
+}
 
 #logo {
     min-height: 25%;
@@ -43,3 +78,33 @@
     transition: ease-in;
     transform: scale(2.5);
 }
+/*body.home .masthead .wrapper {*/
+/*    max-height: 750px;*/
+/*}*/
+/*@media only screen and (min-width: 451px)*/
+/*    .masthead .wrapper {*/
+/*        align-items: center;*/
+/*    }*/
+/*    .masthead .wrapper {*/
+/*        height: 100%;*/
+/*        display: flex;*/
+/*        flex-direction: row-reverse;*/
+/*    }*/
+/*    @media only screen and (min-width: 1024px)*/
+/*        .wrapper {*/
+/*            max-width: 960px;*/
+/*        }*/
+/*        @media only screen and (min-width: 920px)*/
+/*            .wrapper {*/
+/*                !* max-width: 840px; *!*/
+/*            }*/
+/*            @media only screen and (min-width: 768px)*/
+/*                .wrapper {*/
+/*                    max-width: 728px;*/
+/*                }*/
+/*                .wrapper {*/
+/*                    box-sizing: border-box;*/
+/*                    max-width: calc(100% - 46px);*/
+/*                    margin: auto;*/
+/*                    position: relative;*/
+/*                }*/
