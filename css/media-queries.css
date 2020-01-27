@@ -1,0 +1,15 @@
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width:768px) { }
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width:992px) { /* ... */ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width:1200px) { /* ... */ }
+
+#logo {
+    min-height: 10em;
+    /*max-height: 40em;*/
+    min-width: 100%;
+    max-width: 100%;
+}
