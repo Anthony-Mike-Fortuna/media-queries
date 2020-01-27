@@ -63,18 +63,23 @@ nav {
 
 #social-media-links {
     display: flex;
-    flex-direction: row;
+    width: 100%;
+    z-index: 2;
     justify-content: center;
     padding-bottom: 1em;
 }
 
 footer {
-    float: left;
+    float: bottom;
     clear: both;
     display: flex;
     align-items: center;
     padding: 0 1.5em;
     margin: 0 1.5em;
+    z-index: 4;
+}
+.trademark {
+    z-index: 5;
 }
 
 #apple,
@@ -92,6 +97,7 @@ footer {
 #slack:hover {
     transition: ease-in;
     transform: scale(2.5);
+    transition-duration: .2s;
 }
 
 /* Small devices (tablets, 768px and up) */
